@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #ffffff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #101010;
+/*    border-bottom: 1px solid #ddd;*/
+    z-index: 999; /* Ensure it's above other content */
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-grow: 2; 
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+/* Main Content Styles */
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 60px;
+    max-width: 88%;
+    overflow: hidden;
+}
+
+.video-container {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.video-description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Recommended Videos Styles */
+.recommended-videos {
+    flex: 0 0 300px;
+    margin-left: 30px;
+}
+
+.recommended-video {
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.recommended-video img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recommended-video p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.thumbnail {
+    width: 100%;
+    background-image: url(cover.jpg);
+    background-position: cover;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.placeholder {
+    width: 100%;
+    height: auto;
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+  
+    .recommended-videos {
+        margin-top: 20px;
+    }
+  
+    .video-container,
+    .recommended-videos {
+        margin: 0;
+        width: 100%;
+    }
+}
