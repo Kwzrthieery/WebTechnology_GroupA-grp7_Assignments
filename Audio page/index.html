@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="header">
+    <img class="logo" src="logo.jpg" alt="Logo">
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="audio-container">
+        <!-- Main Audio Player -->
+        <audio class="audio" controls autoplay>
+            <source src="1.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        
+        <!-- Audio Description -->
+        <div class="audio-description">
+            <h2 id="audio-caption">Asake_-_Lonely_At_The_Top_(Official_Video)</h2>
+        </div>
+    </div>
+    
+    <!-- Recommended Audios -->
+    <div class="recommended-audios">
+        <h2>Recommended Audios</h2>
+        <!-- Audio Thumbnails -->
+        <div class="recommended-audio" onclick="changeMainAudio('2.mp3', 'Burna_Boy_-_City_Boys_Official_Music_Video')">
+            <p>Burna_Boy_-_City_Boys_Official_Music_Video</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('3.mp3', 'Olamide_-_Celebrate_Official_Visualizer')">
+            <p>Olamide_-_Celebrate_Official_Visualizer</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('4.mp3', 'Olamide_-_Jinja_Official_Video')">
+            <p>Olamide_-_Jinja_Official_Video</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('5.mp3', 'Omah_Lay_-__reason_Official_Music_Video')">
+            <p>Omah_Lay_-__reason_Official_Music_Video</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('6.mp3', 'Omah_Lay_-__soso_Official_Music_Video')">
+            <p>Omah_Lay_-__soso_Official_Music_Video</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('7.mp3', 'Patoranking_-_Babylon_ft._Victony_Visualizer')">
+            <p>Patoranking_-_Babylon_ft._Victony_Visualizer</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('8.mp3', 'Patoranking_-_Kolo_Kolo_Feat._Diamond_Platnumz_Official_Music_Video')">
+            <p>Patoranking_-_Kolo_Kolo_Feat._Diamond_Platnumz_Official_Music_Video</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('9.mp3', 'Rema,_Selena_Gomez_-_Calm_Down_Official_Music_Video')">
+            <p>Rema,_Selena_Gomez_-_Calm_Down_Official_Music_Video</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('10.mp3', 'Rema_-_Charm_Official_Music_Video')">
+            <p>Rema_-_Charm_Official_Music_Video</p>
+        </div>
+        <div class="recommended-audio" onclick="changeMainAudio('11.mp3', 'Spyro_ft_Tiwa_Savage_-_Who_is_your_Guy__Remix__Official_Video')">
+            <p>Spyro_ft_Tiwa_Savage_-_Who_is_your_Guy__Remix__Official_Video</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeMainAudio(audioSrc, captionText) {
+        var mainAudio = document.querySelector('.audio');
+        var caption = document.getElementById('audio-caption');
+        mainAudio.src = audioSrc;
+        caption.textContent = captionText;
+    }
+</script>
+
+</body>
+</html>
