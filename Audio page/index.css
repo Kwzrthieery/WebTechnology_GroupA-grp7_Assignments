@@ -1,14 +1,14 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: #ffffff;
 }
 
 a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -22,22 +22,22 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 999;
+    background-color: black;
+/*    border-bottom: 1px solid #ddd;*/
+    z-index: 999; /* Ensure it's above other content */
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 50px;
+    height: auto;
+    border-radius: 30px;
 }
 
 .navigation {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    text-align: center;
+    flex-grow: 2; 
 }
 
 .navigation li {
